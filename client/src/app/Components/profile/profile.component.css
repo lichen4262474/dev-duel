@@ -1,0 +1,78 @@
+/* Profile Section Container */
+.profile-section {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  max-width: 600px;
+  margin: 10px auto;
+  background-color: #fff;
+}
+
+/* Profile Picture and Bio Section */
+.profile-picture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+}
+
+.profile-picture img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.profile-picture p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Skills Section */
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.skills div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Skill Name Styling */
+.skills p {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.skills span:first-child {
+  text-align: center;
+  flex-basis: 50%;
+  padding: 10px;
+  background-color: #a8d3df;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.skills span:last-child {
+  flex-basis: 50%;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.error-message {
+  text-align: center;
+  font-size: 30px;
+  color: red;
+}

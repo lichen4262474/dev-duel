@@ -1,0 +1,21 @@
+<section class="profile">
+  <div class="profile-section" *ngIf="userData && !userData.error">
+    <div class="profile-picture">
+      <img [src]="userData.avatar_url" alt="Profile Picture" />
+      <p>{{ userData.bio || "No bio available" }}</p>
+    </div>
+
+    <div class="skills">
+      <!--skip the first two items(avatar and bio)-->
+      <div *ngFor="let skill of userData | keyvalue | slice : 2">
+        <p>
+          <span>{{ skill.key }}</span>
+          <span>{{ skill.value }}</span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="userData && userData.error">
+    <p class="error-message">{{ userData.tips }}</p>
+  </div>
+</section>
